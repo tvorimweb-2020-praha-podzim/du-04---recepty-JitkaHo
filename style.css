@@ -8,11 +8,13 @@ html { box-sizing: border-box; }
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    color: white;
 }
 
 h2 {
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    font-weight: 800;
 }
 
 .paticka {
@@ -40,3 +42,108 @@ notebook/pc:
 */
 
 /* tvoje styly sem */
+
+.doporucujeme {
+  display: flex;
+}
+
+.hlavni-recept {
+  background-image: url(images/burger.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid white;
+}
+
+.recept2 {
+  background-image: url(images/sushi.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.recept3 {
+  background-image: url(images/rajcata.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.recept4 {
+  background-image: url(images/kure.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.recept5{
+  background-image: url(images/grilovani.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.recept-meta {
+  display: flex;
+  justify-content: space-between; 
+  }
+
+h2.recept-nazev {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+ }
+/*mobil*/
+@media screen and (max-width: 480px) {
+   .doporucujeme {
+    flex-direction: column;
+   }
+   .hlavni-recept {
+     min-height: 200px;
+   }
+   h2.hlavni-recept {
+     font-size: 1.75rem;
+   }
+   .recept {
+     min-height: 90px;
+     border-bottom: 2px solid white;
+   }
+   h2.recept {
+     font-size: 1.2rem;
+   }
+}
+
+/*tablet*/
+@media screen and (min-width: 480px) and (max-width: 860px) {
+  .doporucujeme {
+    flex-wrap: wrap;
+  }
+  .hlavni-recept {
+    min-height: 250px;
+    flex-basis: 100%;
+    }
+
+  
+  
+  .recept {
+    min-height: 150px;
+    flex-basis: 50%;
+     }
+}
+
+/*PC*/
+@media screen and (min-width: 860px) {
+  .doporucujeme {
+    flex-direction: row;
+    justify-content: stretch;
+    }
+  .hlavni-recept {
+    min-height: 400px;
+    width: calc(100% / 3);
+  }
+  . {
+    width: calc(1OO% / 3);
+  }
+  .recept {
+    min-height: 200px;
+  }
+}
